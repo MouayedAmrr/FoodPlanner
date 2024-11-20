@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Auth.loginActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg2" />
+
+    <EditText
+        android:id="@+id/lgnEmail"
+        android:layout_width="350dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/edittext"
+        android:ems="10"
+        android:hint="    Enter Your Email"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/lgnPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/lgnPassword"
+        android:layout_width="350dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/edittext"
+        android:ems="10"
+        android:hint="    Enter Your Password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/lgnBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lgnEmail" />
+
+    <Button
+        android:id="@+id/lgnBtn"
+        android:layout_width="205dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginBottom="368dp"
+        android:text="Login"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lgnPassword"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="51dp"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="300dp"
+        android:background="@color/white"
+        android:src="@drawable/ic_google"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/signInButton" />
+
+    <Button
+        android:id="@+id/signInButton"
+        android:layout_width="277dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginBottom="280dp"
+        android:background="@drawable/btn_google"
+        android:text="Sign up with Google"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lgnBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
